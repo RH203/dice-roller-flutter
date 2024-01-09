@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/widgets/login_text.dart';
+import 'package:first_app/basics/dice_roller.dart';
+// import 'package:first_app/widgets/login_text.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage(this.firstColor, this.secondColor, {super.key});
@@ -18,9 +19,8 @@ class LoginPage extends StatelessWidget {
               end: Alignment.centerLeft),
         ),
         child: const Center(
-            child: LoginText(
-          "Brian",
-        )),
+          child: DiceRoller(),
+        ),
       ),
     );
   }
