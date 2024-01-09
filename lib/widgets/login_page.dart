@@ -2,22 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:first_app/widgets/login_text.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  const LoginPage(this.firstColor, this.secondColor, {super.key});
+
+  final Color firstColor;
+  final Color secondColor;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(colors: [
-            Color.fromARGB(255, 15, 32, 39),
-            Color.fromARGB(255, 32, 58, 67),
-            Color.fromARGB(255, 44, 83, 100)
-          ], begin: Alignment.topRight, end: Alignment.bottomCenter),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              colors: [firstColor, secondColor],
+              begin: Alignment.centerRight,
+              end: Alignment.centerLeft),
         ),
         child: const Center(
             child: LoginText(
-          nameUser: "Adi",
+          "Brian",
         )),
       ),
     );
