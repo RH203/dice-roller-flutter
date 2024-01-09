@@ -46,8 +46,8 @@ app.*.map.json
 # Folder
 .dart_tool/
 .idea/
-.build/
-.ios/
-.linux/
-.web/
-.windows/
+build/
+ios/
+linux/
+web/
+windows/
