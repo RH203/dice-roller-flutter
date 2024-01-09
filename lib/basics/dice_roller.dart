@@ -13,12 +13,12 @@ class DiceRoller extends StatefulWidget {
 
 class _DiceRollerState extends State<DiceRoller> {
   var numberImage = 1;
+  final random = Random();
 
   void rollDice() {
     setState(() {
-      final random = Random();
       numberImage = random.nextInt(6) + 1;
-      print('Changing image... $numberImage');
+      // print('Changing image... $numberImage');
     });
   }
 
