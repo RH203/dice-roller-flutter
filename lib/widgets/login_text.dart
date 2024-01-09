@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 class LoginText extends StatelessWidget {
-  const LoginText({super.key});
+  final String? nameUser;
+  const LoginText({Key? key, this.nameUser}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      "Hello world",
+    return Text(
+      'Hello ${nameUser}',
       style: TextStyle(color: Colors.white, fontSize: 33),
     );
   }

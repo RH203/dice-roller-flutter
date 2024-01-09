@@ -9,16 +9,16 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              colors: [
-                Color.fromARGB(255, 15, 32, 39),
-                Color.fromARGB(255, 32, 58, 67),
-                Color.fromARGB(255, 44, 83, 100)
-              ]),
+          gradient: LinearGradient(colors: [
+            Color.fromARGB(255, 15, 32, 39),
+            Color.fromARGB(255, 32, 58, 67),
+            Color.fromARGB(255, 44, 83, 100)
+          ], begin: Alignment.topRight, end: Alignment.bottomCenter),
         ),
-        child: const Center(child: LoginText()),
+        child: const Center(
+            child: LoginText(
+          nameUser: "Adi",
+        )),
       ),
     );
   }
